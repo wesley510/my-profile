@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Wesley Sibuyi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000; /* Set background to black */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: white; /* Ensure text is visible on black background */
+        }
+
+        header {
+            background: #3AAFA9;
+            color: white; /* Set header text to white */
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: white; /* Set h1 text to white */
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        input {
+            width: 80%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #3AAFA9;
+            background-color: #222;
+            color: white;
+        }
+
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #3AAFA9;
+            background-color: #222;
+            color: white;
+        }
+
+        button {
+            background-color: #3AAFA9;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2a8c8a; /* Darker shade on hover */
+        }
+
+        footer {
+            margin-top: 20px;
+            color: white; /* Ensure footer text is visible */
+        }
+
+        .social-media {
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            color: white;
+            font-size: 30px; /* Increase icon size */
+            margin: 0 10px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-media a:hover {
+            transform: scale(1.2); /* Scale effect on hover */
+            color: #3AAFA9; /* Change color on hover */
+        }
+    </style>
+    <script>
+        function showEmailAlert() {
+            alert("You can reach me at wesleymthunzi033@gmail.com");
+        }
+
+        function submitMessage() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+                alert("Please fill in all fields before submitting.");
+            } else {
+                alert(`Your message has been submitted.\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+                document.getElementById("name").value = ""; // Clear the name input
+                document.getElementById("email").value = ""; // Clear the email input
+                document.getElementById("message").value = ""; // Clear the textarea
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contact Wesley Sibuyi</h1>
+    </header>
+    <div class="contact-info">
+        <p>Email: <a href="#" onclick="showEmailAlert()">wesleymthunzi033@gmail.com</a></p>
+        <p>Phone: 079 966 7245</p>
+        
+        <p>Name:</p>
+        <input type="text" id="name" placeholder="Your Name">
+        
+        <p>Email:</p>
+        <input type="email" id="email" placeholder="Your Email">
+        
+        <p>Message:</p>
+        <textarea id="message" placeholder="Write your message here..."></textarea>
+        <br>
+        <button onclick="submitMessage()">Submit Message</button>
+    </div>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/wesley-sibuyi-720387250/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUOlBw97RT7aRbMckbzn%2FOA%3D%3D" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Bambata12/wesley" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 Wesley Sibuyi</p>
+    </footer>
+</body>
+</html>

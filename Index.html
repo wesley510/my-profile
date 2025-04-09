@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #111;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      color: #fff;
+    }
+    nav ul li {
+      cursor: pointer;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    nav ul li:hover {
+      color: #00ffcc;
+    }
+    .contact-btn {
+      background-color: #00ffcc;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 2px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact-btn:hover {
+      background-color: #00e6b8;
+    }
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 50px;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    .hero img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+    }
+    .hero-text {
+      max-width: 500px;
+      text-align: center; /* Added center alignment */
+    }
+    .hero-text h4 {
+      color: #00ffcc;
+      font-size: 16px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+    .hero-text h1 span {
+      display: block;
+      color: #00ffcc;
+    }
+    .hero-text p {
+      margin: 20px 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #aaa;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #00ffcc;
+      border: 1px solid #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+    .social-media {
+      margin: 20px 0;
+      text-align: center; /* Center align social media icons */
+    }
+    .social-media a {
+      color: white;
+      font-size: 50px; /* Increased icon size */
+      margin: 0 15px;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-media a:hover {
+      transform: scale(1.5); /* Scale effect on hover */
+      color: #00ffcc; /* Change color on hover */
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://th.bing.com/th/id/OIP.dSbxFyiGm62RdKqWJh_QOQHaHa?w=169&h=180&c=7&r=0&o=5&pid=1.7" alt="logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="C:\Users\Capaciti\Documents\New folder\wes.jpg" alt="C:\Users\Capaciti\Documents\New folder\wes.jpg" />
+    <div class="hero-text">
+      <h4>WEB DEVELOPER</h4>
+      <h1>I'm a Web<br><span>Developer</span></h1>
+      <p>I am a highly organized and hardworking individual.<br>I'm eager to learn and gain more knowledge and work towards new challenges.</p>
+      <a href="https://example.com/path/to/your/Cv.pdf" class="download-btn">DOWNLOAD CV</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/wesley-sibuyi-720387250/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/Bambata12/wesley" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+    <p style="text-align: center;">&copy; 2025 Wesley Sibuyi</p> <!-- Center align footer text -->
+  </footer>
+</body>
+</html>
