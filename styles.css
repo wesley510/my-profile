@@ -288,7 +288,7 @@ p {
 .skill-box {
     background-color: #007bff; /* Blue background */
     color: white; /* White text */
-    border-radius: 8px;
+    border-radius: 9px;
     padding: 15px;
     width: 151px; /* Adjust width as needed */
     text-align: center;
