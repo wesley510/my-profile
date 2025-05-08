@@ -1,0 +1,334 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000; /* Set background to black */
+    color: white; /* Ensure text is visible on black background */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background: #3AAFA9;
+    color: white; /* Set header text to white */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 50px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+nav ul li {
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav ul li:hover {
+    color: #00ffcc;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: white; /* Set h1 text to white */
+}
+
+h2 {
+    cursor: pointer; /* Change cursor to pointer for clickable headings */
+    color: #3AAFA9; /* Color for headings */
+    margin-top: 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.hero img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+}
+
+.hero-text {
+    max-width: 500px;
+    text-align: center;
+}
+
+.hero-text h4 {
+    color: #00ffcc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+    display: block;
+    color: #00ffcc;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #00ffcc;
+    border: 1px solid #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #00ffcc;
+    color: #111;
+}
+
+.container {
+    padding: 20px;
+    text-align: justify;
+}
+
+.content {
+    display: none; /* Initially hide content */
+    padding: 10px;
+    background-color: #3AAFA9;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff; /* Ensure footer text is visible */
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    color: white;
+    font-size: 50px; /* Increase icon size */
+    margin: 0 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.5); /* Scale effect on hover */
+    color: #00ffcc; /* Change color on hover */
+}
+
+/* Contact Section */
+.contact-info {
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    width: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3AAFA9;
+    background-color: #222;
+    color: white;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #3AAFA9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2a8c8a; /* Darker shade on hover */
+}
+
+/* About Section */
+body {
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4db8ff;
+    padding: 12px;
+    background-color: #2d2d2d;
+    border-radius: 6px;
+    margin: 15px 0 0 0;
+}
+
+h2:hover {
+    background-color: #3d3d3d;
+    color: #7ac8ff;
+}
+
+.content {
+    padding: 15px;
+    background-color: #252525;
+    border-left: 3px solid #4db8ff;
+    margin-bottom: 20px;
+    border-radius: 0 0 4px 4px;
+}
+
+.certification-box {
+    background-color: #333333;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border-left: 2px solid #4db8ff;
+}
+
+a {
+    text-decoration: none;
+    color: #4db8ff;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #7ac8ff;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111111;
+    color: #aaaaaa;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+}
+
+.social-media a {
+    color: #aaaaaa;
+    margin: 0 12px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #4db8ff;
+}
+
+p {
+    color: #d0d0d0;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Increased space between boxes */
+    margin-top: 20px;
+}
+
+.skill-box {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border-radius: 8px;
+    padding: 15px;
+    width: 150px; /* Adjust width as needed */
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s; /* Smooth scaling */
+}
+
+.skill-box:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+.project-image {
+    width: auto; /* Maintain original width */
+    height: 100px; /* Set a fixed height */
+    max-width: 100%; /* Responsive scaling */
+    border-radius: 4px;
+}
+
+.view-project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.view-project-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
