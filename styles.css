@@ -281,23 +281,23 @@ p {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* Increased space between boxes */
-    margin-top: 20px;
+    justify-content: space-between;
 }
 
 .skill-box {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    border-radius: 9px;
-    padding: 15px;
-    width: 152; /* Adjust width as needed */
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s; /* Smooth scaling */
+    flex: 1 1 30%; /* Adjusts size */
+    margin: 10px; /* Space between boxes */
+    padding: 20px; /* Inner padding */
+    box-sizing: border-box; /* Includes padding in width/height */
+    background-color: #007bff; /* Background color */
+    text-align: center; /* Center text */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    min-height: 150px; /* Minimum height for uniformity */
 }
 
 .skill-box:hover {
-    transform: scale(1.06); /* Scale up on hover */
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 .project {
